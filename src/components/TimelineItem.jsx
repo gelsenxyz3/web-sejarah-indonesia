@@ -1,0 +1,2 @@
+import useReveal from '../hooks/useReveal'
+export default function TimelineItem({d,t,x}){const r=useReveal();return <li ref={r} className="reveal relative"><span className="absolute -left-[34px] top-1 w-4 h-4 rounded-full bg-emas ring-4 ring-maroon"/><p className="text-emas text-sm font-semibold">{d}</p><h3 className="font-serif text-xl font-bold text-gading">{t}</h3><p className="text-gading/80 mt-1">{x}</p></li>}

@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{@apply bg-gading text-neutral-900 font-sans overflow-x-hidden}
+section{scroll-margin-top:72px}
+.reveal{opacity:0;transform:translateY(24px);transition:all .7s ease}.reveal.show{opacity:1;transform:none}
+@keyframes wave{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-3deg) scaleX(.97)}}
+.flag{animation:wave 3s ease-in-out infinite;transform-origin:left center}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.flag{animation:none}html{scroll-behavior:auto}}
